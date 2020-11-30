@@ -313,6 +313,9 @@ textarea {
 
 body {
   font-family: "Nunito", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  image-rendering: pixelated;
 }
 
 .color-brown {
