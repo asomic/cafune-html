@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Facturación — Cafune</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/splide-default.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header id="header">
+        <div class="header-inner" id="header-inner">
+            <div class="burger-wrapper" id="triggerMenu">
+                <button class="burger" type="button">
+                </button>
+            </div>
+            <div class="brand">
+                <a href="/">
+                    <img src="/assets/img/logo.png" alt="Ir al Inicio">
+                </a>
+            </div>
+            <div class="cart">
+                <a href="/cart.html">
+                    <img src="/assets/img/cart-icon.svg" alt="Carrito">
+                    <span>0</span>
+                </a>
+            </div>
+            <div class="main-menu" id="theMenu">
+                <a href="/">Tienda</a>
+                <a href="/contacto.html">Contacto</a>
+                <a href="/conocenos.html">Conócenos</a>
+            </div>
+            <div class="rr-ss" id="theRrss">
+                <a href="#">
+                    <img src="/assets/img/facebook-icon.svg" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="/assets/img/instagram-icon.svg" alt="Instagram">
+                </a>
+            </div>
+            <div class="sign" id="theSign">
+                <!-- <p id="openModalSignIn">Acceder</p> -->
+                <a href="/auth/account.html">Gonzalo</a>
+                <div class="logout">
+                    <a href="#">Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="auth-wrapper">
+        <div class="auth pd-t pd-lr">
+            <div class="menu">
+                <div class="header-section">
+                    <h3 class="title">Menu</h3>
+                </div>
+                <div class="body">
+                    <button id="goToAccount">Mi Cuenta</button>
+                    <button class="active" id="goToBilling">Información de Facturación</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="header-section">
+                    <h3 class="title">Información de Facturación</h3>
+                </div>
+                <div class="body">
+                    <div class="item">
+                        <label for="">Nombre *</label>
+                        <input type="text" placeholder="Ej: Alfonso">
+                    </div>
+                    <div class="item">
+                        <label for="">Apellidos *</label>
+                        <input type="text" placeholder="Ej: Torres">
+                    </div>
+                    <div class="item">
+                        <label for="">Dirección *</label>
+                        <input type="text" placeholder="Ingresa tu Dirección">
+                    </div>
+                    <div class="item">
+                        <label for="">Región *</label>
+                        <select name="" id="">
+                            <option value="">Maule</option>
+                            <option value="">Whatever</option>
+                        </select>
+                    </div>
+                    <div class="item">
+                        <label for="">Ciudad *</label>
+                        <input type="text" placeholder="Ej: Curicó">
+                    </div>
+                    <div class="item">
+                        <label for="">Teléfono *</label>
+                        <input type="number" placeholder="Ej: 912345678">
+                    </div>
+                    <div class="item">
+                        <label for="">Correo *</label>
+                        <input type="email" placeholder="Ej: correo@correo.com">
+                    </div>
+                    <button>Actualizar Información</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/splide.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>

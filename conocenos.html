@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conócenos — Cafune</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">    <link rel="stylesheet" href="/assets/css/splide-default.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+    <div class="modal-wrapper" id="modalSignIn">
+        <div class="sign-options">
+            <div class="head">
+                <h3>Iniciar Sesión</h3>
+                <div class="close closeModal"></div>
+            </div>
+            <div class="body">
+                <div class="item">
+                    <label for="">Usuario o Correo</label>
+                    <input type="email" placeholder="usuario@correo.com">
+                </div>
+                <div class="item">
+                    <label for="">Contraseña</label>
+                    <input type="password" placeholder="**********">
+                </div>
+                <div class="item remember">
+                    <input type="checkbox" name="" id="">
+                    <p>Recordar datos</p>
+                </div>
+                <div class="item lostPassword">
+                    <a href="#">¿Perdiste tu contraseña?</a>
+                </div>
+                <button class="background-lemon color-gray">Entrar</button>
+                <div class="separator"></div>
+                <button class="background-gray color-white" id="goToRegister">Regístrate</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabecera -->
+    <header id="header">
+        <div class="header-inner" id="header-inner">
+            <div class="burger-wrapper" id="triggerMenu">
+                <button class="burger" type="button">
+                </button>
+            </div>
+            <div class="brand">
+                <a href="/">
+                    <img src="/assets/img/logo.png" alt="Ir al Inicio">
+                </a>
+            </div>
+            <div class="cart">
+                <a href="/cart.html">
+                    <img src="/assets/img/cart-icon.svg" alt="Carrito">
+                    <span>0</span>
+                </a>
+            </div>
+            <div class="main-menu" id="theMenu">
+                <a href="/">Tienda</a>
+                <a href="/contacto.html">Contacto</a>
+                <a href="/conocenos.html">Conócenos</a>
+            </div>
+            <div class="rr-ss" id="theRrss">
+                <a href="#">
+                    <img src="/assets/img/facebook-icon.svg" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="/assets/img/instagram-icon.svg" alt="Instagram">
+                </a>
+            </div>
+            <div class="sign" id="theSign">
+                <!-- <p id="openModalSignIn">Acceder</p> -->
+                <a id="openModalSignIn">Acceder</a>
+                <div class="logout">
+                    <a href="#">Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="center-column-wrapper back-light back-light-x">
+        <div class="center-column pd-t pd-lr">
+            <div class="header">
+                <h3 class="title">
+                    Conócenos
+                </h3>
+            </div>
+            <div class="body">
+                <img src="/assets/img/nosotros.jpg" alt="Equipo Cafune">
+                <h3>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer urna metus
+                </h3>
+                <p class="sp-p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, voluptatum illo debitis aliquid doloribus error harum modi consequatur natus molestias, voluptates odit expedita ducimus consectetur facilis provident sunt. Accusantium, veritatis!
+                </p>
+            </div>
+        </div>
+        <div class="fake-gallery">
+            <img src="/assets/img/g-1.jpg" alt="Gallery 1">
+            <img src="/assets/img/g-2.jpg" alt="Gallery 2">
+            <img src="/assets/img/g-3.jpg" alt="Gallery 3">
+        </div>
+        <div class="center-column pd-lr">
+            <div class="body">
+                <p class="sp-p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat odit voluptatum nesciunt non perspiciatis hic corrupti, autem adipisci commodi rerum id deserunt asperiores eveniet. Saepe magni laudantium fugit quidem at?
+                </p>
+            </div>
+            <div class="body">
+                <img src="/assets/img/cafune-local.jpg" alt="Local Cafuné">
+                <p class="sp-p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat odit voluptatum nesciunt non perspiciatis hic corrupti, autem adipisci commodi rerum id deserunt asperiores eveniet. Saepe magni laudantium fugit quidem at? <br>
+                    <br>
+                    <strong>Horario de Atención</strong>
+                    <br>
+                    Lunes a Viernes
+                    <br>
+                    10:00 - 18:00 hrs
+                    <br>
+                    Sábados y Domingos
+                    <br>
+                    Cerrado
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/splide.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>

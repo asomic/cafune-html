@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito — Cafune</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/splide-default.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+    <div class="modal-wrapper" id="modalSignIn">
+        <div class="sign-options">
+            <div class="head">
+                <h3>Iniciar Sesión</h3>
+                <div class="close closeModal"></div>
+            </div>
+            <div class="body">
+                <div class="item">
+                    <label for="">Usuario o Correo</label>
+                    <input type="email" placeholder="usuario@correo.com">
+                </div>
+                <div class="item">
+                    <label for="">Contraseña</label>
+                    <input type="password" placeholder="**********">
+                </div>
+                <div class="item remember">
+                    <input type="checkbox" name="" id="">
+                    <p>Recordar datos</p>
+                </div>
+                <div class="item lostPassword">
+                    <a href="#">¿Perdiste tu contraseña?</a>
+                </div>
+                <button class="background-lemon color-gray">Entrar</button>
+                <div class="separator"></div>
+                <button class="background-gray color-white" id="goToRegister">Regístrate</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-wrapper" id="modalDeliveryWrapper">
+        <div class="delivery-options">
+            <div class="head">
+                <h3>Opciones de Despacho</h3>
+                <div class="close closeModal"></div>
+            </div>
+            <div class="map-img"></div>
+            <div class="options">
+                <div class="option checked">
+                    <input type="checkbox" name="" id="">
+                    <div class="data">
+                        <div class="header">
+                            <p>Curicó</p>
+                            <p>$1000</p>
+                        </div>
+                        <div class="body">
+                            <p>Zona Urbana</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="" id="">
+                    <div class="data">
+                        <div class="header">
+                            <p>Zapallar</p>
+                            <p>$2000</p>
+                        </div>
+                        <div class="body">
+                            <p>Hasta Los Cristales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="" id="">
+                    <div class="data">
+                        <div class="header">
+                            <p>Los Niches</p>
+                            <p>$3000</p>
+                        </div>
+                        <div class="body">
+                            <p>Hasta la Obra</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="" id="">
+                    <div class="data">
+                        <div class="header">
+                            <p>Sarmiento</p>
+                            <p>$3000</p>
+                        </div>
+                        <div class="body">
+                            <p>Los Guindos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="option">
+                    <input type="checkbox" name="" id="">
+                    <div class="data">
+                        <div class="header">
+                            <p>Romeral</p>
+                            <p>$5000</p>
+                        </div>
+                        <div class="body">
+                            <p>Romeral Plaza</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabecera -->
+    <header id="header">
+        <div class="header-inner" id="header-inner">
+            <div class="burger-wrapper" id="triggerMenu">
+                <button class="burger" type="button">
+                </button>
+            </div>
+            <div class="brand">
+                <a href="/">
+                    <img src="/assets/img/logo.png" alt="Ir al Inicio">
+                </a>
+            </div>
+            <div class="cart">
+                <a href="/cart.html">
+                    <img src="/assets/img/cart-icon.svg" alt="Carrito">
+                    <span>0</span>
+                </a>
+            </div>
+            <div class="main-menu" id="theMenu">
+                <a href="/">Tienda</a>
+                <a href="/contacto.html">Contacto</a>
+                <a href="/conocenos.html">Conócenos</a>
+            </div>
+            <div class="rr-ss" id="theRrss">
+                <a href="#">
+                    <img src="/assets/img/facebook-icon.svg" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="/assets/img/instagram-icon.svg" alt="Instagram">
+                </a>
+            </div>
+            <div class="sign" id="theSign">
+                <!-- <p id="openModalSignIn">Acceder</p> -->
+                <a id="openModalSignIn">Acceder</a>
+                <div class="logout">
+                    <a href="#">Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-wrapper">
+        <div class="cart pd-t pd-lr">
+            <div class="products-wrapper">
+                <div class="header-section">
+                    <h3 class="title">
+                        Carrito de Compra
+                    </h3>
+                </div>
+                <div class="message">
+                    <img src="/assets/img/time-icon.svg" alt="Mensaje sobre el Despacho">
+                    <p>
+                        Recuerda que tu pedido <strong>estará disponible dentro de 48 horas</strong> para delivery o retiro en tienda.
+                    </p>
+                </div>
+                <div class="products">
+                    <div class="item">
+                        <div class="close"></div>
+                        <div class="img" style="background-image: url(/assets/img/fake_product.jpg);"></div>
+                        <div class="data">
+                            <h4>Torta Cafuné</h4>
+                            <div class="quantity-wrapper">
+                                <p>Cantidad</p>
+                                <div class="quantity">
+                                    <div class="minus"></div>
+                                    <input type="number" step="1" min="1" max value="1">
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <p>$10000</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="close"></div>
+                        <div class="img" style="background-image: url(/assets/img/fake_product.jpg);"></div>
+                        <div class="data">
+                            <h4>Torta Cafuné</h4>
+                            <div class="quantity-wrapper">
+                                <p>Cantidad</p>
+                                <div class="quantity">
+                                    <div class="minus"></div>
+                                    <input type="number" step="1" min="1" max value="1">
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <p>$10000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-wrapper">
+                <!-- Cabecera -->
+                <div class="header-section">
+                    <h3 class="title">
+                        Totales
+                    </h3>
+                </div>
+                <!-- Cupón -->
+                <div class="coupon">
+                    <div class="header">
+                        <p>Cupón</p>
+                        <div class="toggler"></div>
+                    </div>
+                    <input type="text">
+                    <button type="button">Agregar Cupón</button>
+                </div>
+                <!-- fecha de entrega -->
+                <div class="date">
+                    <div class="header">
+                        <p>Fecha del Pedido</p>
+                    </div>
+                    <input type="date" id="start" name="trip-start" value="2020-11-22">
+                </div>
+                <!-- Totales -->
+                <div class="totals">
+                    <div class="subtotal">
+                        <div class="a-row">
+                            <p class="total-title">Subtotal</p>
+                            <p>$10000</p>
+                        </div>
+                    </div>
+                    <div class="delivery">
+                        <p class="total-title">Envío</p>
+                        <div class="a-row">
+                            <div>
+                                <input type="checkbox" id="" value="">
+                                <p>Retiro en el Local</p>
+                            </div>
+                            <div>
+                                <p>$0</p>
+                            </div>
+                        </div>
+                        <div class="a-row">
+                            <div>
+                                <input type="checkbox" id="" value="">
+                                <p style="margin-right: 5px;">Despacho (Curicó)</p>
+                                <button class="change-delivery" id="changeDelivery">Cambiar</button>
+                            </div>
+                            <div>
+                                <p>$1000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="a-row">
+                            <div>
+                                <p class="total-title">Total</p>
+                            </div>
+                            <div>
+                                <p>$10000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="process-button">Procesar Carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/splide.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
