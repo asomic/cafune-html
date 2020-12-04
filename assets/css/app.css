@@ -621,6 +621,9 @@ button {
   font-size: 16px;
   margin-bottom: 40px;
 }
+.center-column-wrapper .center-column .body p.sp-p a {
+  color: #3F190E;
+}
 .center-column-wrapper .center-column .body img {
   width: 100%;
   margin-bottom: 36px;
