@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product — Cafune</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/splide-default.min.css">
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+    <div class="modal-wrapper" id="modalSignIn">
+        <div class="sign-options">
+            <div class="head">
+                <h3>Iniciar Sesión</h3>
+                <div class="close closeModal"></div>
+            </div>
+            <div class="body">
+                <div class="item">
+                    <label for="">Usuario o Correo</label>
+                    <input type="email" placeholder="usuario@correo.com">
+                </div>
+                <div class="item">
+                    <label for="">Contraseña</label>
+                    <input type="password" placeholder="**********">
+                </div>
+                <div class="item remember">
+                    <input type="checkbox" name="" id="">
+                    <p>Recordar datos</p>
+                </div>
+                <div class="item lostPassword">
+                    <a href="#">¿Perdiste tu contraseña?</a>
+                </div>
+                <button class="background-lemon color-gray">Entrar</button>
+                <div class="separator"></div>
+                <button class="background-gray color-white" id="goToRegister">Regístrate</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cabecera -->
+    <header id="header">
+        <div class="header-inner" id="header-inner">
+            <div class="burger-wrapper" id="triggerMenu">
+                <button class="burger" type="button">
+                </button>
+            </div>
+            <div class="brand">
+                <a href="/">
+                    <img src="/assets/img/logo.png" alt="Ir al Inicio">
+                </a>
+            </div>
+            <div class="cart">
+                <a href="/cart.html">
+                    <img src="/assets/img/cart-icon.svg" alt="Carrito">
+                    <span>0</span>
+                </a>
+            </div>
+            <div class="main-menu" id="theMenu">
+                <a href="/">Tienda</a>
+                <a href="/contacto.html">Contacto</a>
+                <a href="/conocenos.html">Conócenos</a>
+            </div>
+            <div class="rr-ss" id="theRrss">
+                <a href="#">
+                    <img src="/assets/img/facebook-icon.svg" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="/assets/img/instagram-icon.svg" alt="Instagram">
+                </a>
+            </div>
+            <div class="sign" id="theSign">
+                <!-- <p id="openModalSignIn">Acceder</p> -->
+                <a id="openModalSignIn">Acceder</a>
+                <div class="logout">
+                    <a href="#">Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ficha Producto -->
+    <div class="product-sheet-wrapper">
+        <div class="product-sheet pd-t pd-lr">
+            <div class="breadcrumb">
+                <a href="/">Tienda</a>&nbsp;&nbsp;/&nbsp;&nbsp;<span>Postre Cafuné</span>
+            </div>
+            <div class="product">
+                <div class="product-img" style="background-image: url(/assets/img/fake_product-3.jpg);"></div>
+                <div class="product-data">
+                    <h1>Torta Cafuné</h1>
+                    <p class="price">$10.000</p>
+                    <p class="desc">
+                        Galletas de vainilla, Crema de 3 leches y manjar
+                    </p>
+                    <p class="category">
+                        Categoría: <span>Postres</span>
+                    </p>
+                    <div class="message">
+                        <img src="/assets/img/time-icon.svg" alt="Mensaje sobre el Despacho">
+                        <p>
+                            Recuerda que tu pedido <strong>estará disponible dentro de 48 horas</strong> para delivery o retiro en tienda.
+                        </p>
+                    </div>
+                    <div class="addToCart">
+                        <div class="quantity-wrap">
+                            <p>Cantidad:</p>
+                            <div class="quantity">
+                                <div class="minus"></div>
+                                &nbsp;
+                                <input type="number" step="1" min="1" max value="1">
+                                &nbsp;
+                                <div class="plus"></div>
+                            </div>
+                        </div>
+                        <button type="button">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/splide.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
