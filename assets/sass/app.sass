@@ -2141,7 +2141,66 @@ footer
             top: -2.8vw
 
 @media (min-width: 1600px)
-    header
+    footer
         &::before
             padding-top: 2.5%
             top: -38px
+
+.flow-success-order
+    .body
+        p.subtitle
+            font-weight: 600
+            color: $brown !important
+            margin-bottom: 16px
+        .order
+            margin-bottom: 38px !important
+            .item
+                // display: block
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                box-sizing: border-box
+                position: relative
+                margin-bottom: 16px
+                width: 100%
+                box-sizing: border-box
+                .img
+                    width: 15%
+                    height: 0
+                    padding-top: 15%
+                    background-color: #D4DE0C
+                    background-position: center
+                    background-size: cover
+                    background-repeat: no-repeat
+                    margin-right: 16px
+                    border-radius: 5px
+                .data
+                    width: 75%
+                    h4
+                        color: #3F190E
+                        font-size: 17px
+                        font-weight: 600
+                        margin-bottom: 6px
+                    .details
+                        display: flex
+                        width: 100%
+                        justify-content: space-between
+                        p
+                            margin: 0
+        .deliverydata
+            border-radius: 5px
+            padding: 20px 22px
+            box-sizing: border-box
+            background-color: $lightGreen
+
+@media (min-width: 660px)
+    .flow-success-order
+        width: 470px
+        .body
+            .subtitle
+            .order
+                .item
+                    .img
+                    .data
+                        h4
+                        .details
